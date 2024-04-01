@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teams app</title>
+    <link rel="icon" href="./images/task1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <!-- top notifications change setting and discription -->
+        <div class="changesettings">
+            <p  class="changesettings-p">Your status is set to do not disturb. you'll only get notifications for urgent messages and from your priority contacts.</p>
+            <div class="check-btn">
+                <button class="bg-white h-30 br-l-gray br-r-5 bold cur">Change settings</button>
+                <button class="br-none bg-none h-30 cur">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <!-- menu bar of the live like chat,camera, mic etc -->
+            <div class="menu-bar">
+                <div class="recording-secure">
+                    <i class="fa-solid fa-shield"></i>
+                    <div class="record">
+                        <i class="fa-solid fa-record-vinyl record-red"></i>
+                        <span>1:1:00</span>
+                    </div>
+                </div>
+                <div class="interaction">
+                    <button class="btn bg-none br-none"> 
+                        <i class="fa-regular fa-comment-dots"></i> <br/>
+                        <span class="tx-sz">Chat</span>
+                    </button>
+                    <button class="btn bg-none br-none"> 
+                        <i class="fa-solid fa-user"></i>
+                        <span>5</span>
+                        <br/>
+                        <span class="tx-sz">People</span>
+                    </button>
+                    <button class="btn bg-none br-none"> 
+                        <i class="fa-regular fa-hand"></i> <br>
+                        <span class="tx-sz">Raise</span>
+                    </button>
+                    <button class="btn bg-none br-none"> 
+                        <i class="fa-regular fa-face-smile"></i> <br>
+                        <span class="tx-sz">React</span>
+                    </button>
+                    <button class="btn bg-none br-none"> 
+                        <i class="fa-solid fa-table-cells-large"></i> <br>
+                        <span class="tx-sz">View</span>
+                    </button>
+                    <div class="note btn">
+                        <i class="fa-regular fa-pen-to-square"></i> <br>
+                        <span class="note-icon tx-sz">Note</span>
+                    </div>
+                    <button class="btn bg-none br-none">
+                        <i class="fa-regular fa-square-plus"></i> <br>
+                        <span class="tx-sz">Apps</span>
+                    </button>
+                    <button class="btn bg-none br-none"><i class="fa-solid fa-ellipsis"></i> </button>
+                </div>
+                <div class="action">
+                    <div class="btn-camera">
+                        <button class="btn  bg-none br-none"> 
+                            <i class="fa-solid fa-video"></i> <br>
+                            <span class="tx-sz">Camera</span>
+                        </button>
+                        <div class="chev">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="btn-camera">
+                        <button class="btn  bg-none br-none"> <i class="fa-solid fa-microphone"></i>
+                            <br>
+                            <span class="tx-sz">Mic</span>
+                        </button>
+                        <div class="chev">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <button class="btn bg-none br-none cl-red"> <i class="fa-solid fa-square-xmark"></i> 
+                        <br>
+                        <span class="tx-sz">stop sharing</span>
+                    </button>
+                    
+                    <button class="btn-l"> <i class="fa-solid fa-phone"></i> <span>Leave</span></button>
+                </div>
+            </div>
+            <!-- live attendance and popups screen -->
+            <div class="content">
+                <!-- popups of all notifications -->
+                <div class="pop">
+                    <div class="exit">
+                        <span><i class="fa-solid fa-record-vinyl"></i> Recording has started</span>
+                        <button class="pop-exit-btn"><i class="fa-solid fa-x"></i></button>
+                    </div>
+                    <div class="pop-text">
+                        <p>Lets everyone know they're being recorded.</p>
+                        <a href="./privacy policy">privacy policy</a>
+                    </div>
+
+                </div>
+                <!-- people in the meeting or attended people -->
+                <div class="cards">
+                    <div class="card">
+                        <div class="round">
+                            Name
+                        </div>
+                        <br>
+                        <span>Name <i class="fa-solid fa-microphone-slash"></i></span>
+                        
+                    </div>
+                    <div class="card">
+                        <div class="round-1">
+                            Name
+                        </div>
+                        <br>
+                        <span>Name <i class="fa-solid fa-microphone-slash"></i></span>
+                    </div>
+                    <div class="card">
+                        <div class="round-2">
+                            Name
+                        </div>
+                        <br>
+                        <span>Name <i class="fa-solid fa-microphone-slash"></i></span>
+                    </div>
+                    <div class="card">
+                        <div class="round-3">
+                            Name
+                        </div>
+                        <br>
+                        <span>Name <i class="fa-solid fa-microphone-slash"></i></span>
+                    </div>
+                </div>
+                <!-- done pop up of speaker -->
+                <div class="call-pop">
+                    <div class="round-4">
+                        Name
+                    </div>
+                    <button class="btn-info">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
